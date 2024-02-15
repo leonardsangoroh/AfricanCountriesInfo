@@ -13,6 +13,9 @@
 		B5827D702B7CB42200A2D2F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5827D6E2B7CB42200A2D2F5 /* Main.storyboard */; };
 		B5827D722B7CB42300A2D2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5827D712B7CB42300A2D2F5 /* Assets.xcassets */; };
 		B5827D752B7CB42300A2D2F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5827D732B7CB42300A2D2F5 /* LaunchScreen.storyboard */; };
+		B5827D802B7CB96300A2D2F5 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = B5827D7F2B7CB96300A2D2F5 /* countries.json */; };
+		B5827D822B7CE26500A2D2F5 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5827D812B7CE26500A2D2F5 /* Country.swift */; };
+		B5827D842B7CE36400A2D2F5 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5827D832B7CE36400A2D2F5 /* Countries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B5827D712B7CB42300A2D2F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5827D742B7CB42300A2D2F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5827D762B7CB42300A2D2F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5827D7F2B7CB96300A2D2F5 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		B5827D812B7CE26500A2D2F5 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		B5827D832B7CE36400A2D2F5 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		B5827D672B7CB42200A2D2F5 /* AfricanCountriesInfo */ = {
 			isa = PBXGroup;
 			children = (
+				B5827D7E2B7CB94900A2D2F5 /* Countries JSON File */,
 				B5827D682B7CB42200A2D2F5 /* AppDelegate.swift */,
 				B5827D6A2B7CB42200A2D2F5 /* SceneDelegate.swift */,
 				B5827D6C2B7CB42200A2D2F5 /* ViewController.swift */,
+				B5827D832B7CE36400A2D2F5 /* Countries.swift */,
+				B5827D812B7CE26500A2D2F5 /* Country.swift */,
 				B5827D6E2B7CB42200A2D2F5 /* Main.storyboard */,
 				B5827D712B7CB42300A2D2F5 /* Assets.xcassets */,
 				B5827D732B7CB42300A2D2F5 /* LaunchScreen.storyboard */,
 				B5827D762B7CB42300A2D2F5 /* Info.plist */,
 			);
 			path = AfricanCountriesInfo;
+			sourceTree = "<group>";
+		};
+		B5827D7E2B7CB94900A2D2F5 /* Countries JSON File */ = {
+			isa = PBXGroup;
+			children = (
+				B5827D7F2B7CB96300A2D2F5 /* countries.json */,
+			);
+			path = "Countries JSON File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +144,7 @@
 			files = (
 				B5827D752B7CB42300A2D2F5 /* LaunchScreen.storyboard in Resources */,
 				B5827D722B7CB42300A2D2F5 /* Assets.xcassets in Resources */,
+				B5827D802B7CB96300A2D2F5 /* countries.json in Resources */,
 				B5827D702B7CB42200A2D2F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5827D822B7CE26500A2D2F5 /* Country.swift in Sources */,
 				B5827D6D2B7CB42200A2D2F5 /* ViewController.swift in Sources */,
 				B5827D692B7CB42200A2D2F5 /* AppDelegate.swift in Sources */,
+				B5827D842B7CE36400A2D2F5 /* Countries.swift in Sources */,
 				B5827D6B2B7CB42200A2D2F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

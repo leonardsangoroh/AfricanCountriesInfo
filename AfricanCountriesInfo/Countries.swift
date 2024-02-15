@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Countries: Decodable {
+    var results: [Country]
+}

@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+// Country conforms to Codable Protocol
+struct Country: Decodable {
+    var name: String
+    var capitalCity: String
+    var size: String
+    var population: Int
+    var currency: String
+    var officialLanguage: [String]
+}
