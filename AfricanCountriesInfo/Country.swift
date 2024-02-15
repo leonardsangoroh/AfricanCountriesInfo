@@ -14,5 +14,5 @@ struct Country: Decodable {
     var size: String
     var population: Int
     var currency: String
-    var officialLanguage: [String]
+    var officialLanguage: String
 }

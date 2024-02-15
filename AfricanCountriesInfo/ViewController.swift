@@ -35,7 +35,7 @@ class ViewController: UITableViewController {
         
         let decoder = JSONDecoder()
         if let jsonCountries = try? decoder.decode(Countries.self, from: dataCountries) {
-            countries = jsonCountries.results
+            countries = jsonCountries.countries
             
             for country in countries {
                 print(country.capitalCity)
@@ -65,4 +65,3 @@ class ViewController: UITableViewController {
 
 
 }
-
