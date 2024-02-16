@@ -63,7 +63,14 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // create instance of DetailViewController
         let vc = DetailViewController()
+        vc.name = countries[indexPath.row].name
+        vc.capitalCity = countries[indexPath.row].capitalCity
+        vc.size = countries[indexPath.row].size
+        vc.population = countries[indexPath.row].population
+        vc.currency = countries[indexPath.row].currency
+        vc.officialLanguage = countries[indexPath.row].officialLanguage
         navigationController?.pushViewController(vc, animated: true)
     }
 
